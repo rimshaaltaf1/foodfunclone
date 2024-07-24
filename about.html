@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    *{
+        /* border: 1px solid red; */
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .sec-1>img{
+        height: 500px;
+        object-fit: cover;
+    }
+    .sec-1>.row-1>.box{
+        background-color: rgba(0, 0, 0, 0.674); 
+        height: 500px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    .sec-1>.row-2{
+        /* background-color: #fff; */
+        height: 80px;
+        position: absolute;
+        top: 20px;
+        left: 70px;
+        border-radius: 5px;
+    }
+    .sec-1>nav>.nav-1>img{
+        cursor: pointer;
+    }
+    .sec-1>.row-2>.nav-1>img{
+        height: 55px;
+        margin-top: 10px;
+    }
+    .sec-1>.row-2>.nav-2>ul{
+        list-style-type: none;
+    }
+    .sec-1>.row-2>.nav-2>ul>li{
+        margin-top: 25px;
+        margin-left: 32px;
+    }
+    .sec-1>.row-2>.nav-2>ul>li>a{
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .sec-1>.row-3>.txt{
+        position: absolute;
+        top: 200px;
+        font-style: italic;
+        text-align: center;
+        color: #fff;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .sec-1>.row-3>.txt>h1{
+        font-weight: bold;
+        font-size: 60px;
+    }
+    .sec-1>.row-3>.txt>p{
+        font-weight: bold;
+    }
+    @media(max-width:420px){
+        body{
+            overflow-x: hidden;
+        }
+        .sec-1>img{
+            height: 500px;
+            object-fit: cover;
+        } 
+    }
+    .sec-2>.row-1>.map{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-left: 80px;
+    }
+    .sec-2>.row-2{
+        margin-bottom: 100px;
+    }
+    .sec-2>.row-2>.txt{
+        line-height: 20px;
+        padding-left: 100px;
+    }
+    .sec-2>.row-2>.txt>h5{
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+    .sec-2>.row-2>.txt>h5>i{
+        color: rgb(255, 179, 0);
+    }
+    .sec-2>.row-2>.txt>p{
+        color: rgb(103, 103, 103);
+    }
+    .sec-2>.row-2>.input>input{
+        border: 1px solid rgb(223, 222, 222);
+        width: 370px;
+        height: 40px;
+        font-size: 14px;
+        padding: 0px 10px;
+    }
+    .sec-2>.row-2>.part4>textarea{
+        height: 150px;
+        width: 350px;
+        padding: 5px 12px;
+        font-size: 14px;
+        border: 1px solid rgb(223, 222, 222);
+    }
+    .sec-2>.row-2>.part4>button{
+        border: 1.5px solid rgb(255, 179, 0);
+        background-color: rgb(255, 179, 0);
+        padding: 7px 15px;
+        font-weight: 500;
+        font-size: 15px;
+        margin-left: 200px;
+        margin-top: 10px;
+    }
+    .sec-2>.row-2>.part4>button:hover{
+        border: 1.5px solid rgb(255, 179, 0);
+        transition: 0.5s ease;   
+        background-color: #ffffff00; 
+        color: rgb(255, 179, 0); 
+    }
+    .sec-2>.row-3{
+        height: 350px;
+        background-color: rgb(21, 21, 67);
+        margin: 0px;
+    }
+    .sec-2>.row-3>.txt{
+        color: rgb(154, 153, 153);
+        text-align: justify;
+        padding-left: 50px;
+        margin-top: 80px;
+    }
+    .sec-2>.row-3>.txt>img{
+        cursor: pointer;
+    }
+    .sec-2>.row-3>.txt>p{
+        margin-top: 20px;
+    }
+    .sec-2>.row-3>.number{
+        margin-top: 85px;
+        padding-left: 50px;
+        color: rgb(154, 153, 153);
+    }
+    .sec-2>.row-3>.number>h4{
+        color: rgb(255, 179, 0);
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 700;
+    }
+    .sec-2>.row-3>.number>p{
+        margin-top: 10px;   
+    }
+    .sec-2>.row-3>.number>p>i{
+        margin-right: 10px;
+    }
+    .sec-2>.row-3>.date{
+        margin-top: 85px;
+        padding-left: 30px;
+        color: rgb(154, 153, 153);
+    }
+    .sec-2>.row-3>.date>h4{
+        color: rgb(255, 179, 0);
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 700;
+    }
+    .sec-2>.row-3>.date>p{
+        margin-top: 10px;
+    }
+    .sec-2>.row-4{
+        height: 55px;
+        background-color: rgb(15, 20, 54);
+        padding-top: 15px;
+    }
+    .sec-2>.row-4>.txt>p{
+        color: #fff;
+        padding-left: 50px;
+    }
+    .sec-2>.row-4>.txt>p>span{
+        cursor: pointer;
+        color: #3c3d9a;
+    }   
+    .sec-2>.row-4>.txt>p>span:hover{
+        color: #27287a;
+    }
+    .sec-2>.row-4>.font{
+        color: #fff;
+        padding-left: 250px;
+    }
+    .sec-2>.row-4>.font>p>i{
+        margin-left: 30px;
+    }
+    .sec-2>.row-4>.font>p>i:hover{
+        color: rgb(255, 179, 0);
+        transition: 0.5s ease;
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <header class="sec-1">
+        <img width="100%" src="img/bg 2.webp" alt="">
+            <div class="row-1 row">
+                <div class="box col-12"></div>
+            </div>
+            <nav class="row-2 row container   navbar navbar-expand-lg navbar-light bg-none">
+                <div class="nav-1 col-6">
+                    <img src="img/nav2.webp" alt="" class="navbar-brand  d-inline-block align-top">
+                </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="nav-2 col-6 collapse navbar-collapse">
+                    <ul class="d-flex  navbar-nav ml-auto">
+                         <li class="nav-item">
+                            <a class="nav-link" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">MENU</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ELEMENTS</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="row-3 row">
+                <div class="txt col-12">
+                    <h1>Contact Us</h1>
+                    <p>Beast kind form divide night above let moveth bearing darkness.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="sec-2">
+        <div class="row-1 row">
+            <div class="map col-12">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3616.747844488224!2d67.11573757401625!3d24.9746923406797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb347d912bed263%3A0x5804ef4b4d9236f0!2sKababjees%20Restaurant%20%26%20Bakers%20-%20Super%20Highway!5e0!3m2!1sen!2s!4v1719357939770!5m2!1sen!2s" width="1100" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="row-2 row">
+            <div class="txt col-4">
+                <h5><i class="fa-solid fa-house-chimney"></i>&nbsp;&nbsp;&nbsp;California, United <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; States</h5>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Santa monica bullevard</p>
+                <h5><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;00 (440) 9865 562</h5>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mon to Fri 9am to 6</p>
+                <h5><i class="fa-regular fa-envelope"></i>&nbsp;&nbsp;&nbsp;support@colorlib.com</h5>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Send us your query anytime!</p>
+            </div>
+            <div class="inpu col-4">
+                <input type="text" name="" id="" placeholder="Enter your Name"><br><br>
+                <input type="email" name="" id="" placeholder="Enter email address"><br><br>
+                <input type="text" name="" id="" placeholder="Enter subject"><br><br>
+            </div>
+            <div class="part4 col-4">
+                <textarea placeholder="Enter Message"></textarea>
+                <button>SUBSCRIBE NOW</button>
+            </div>
+        </div>
+        <div class="row-3 row d-flex">
+            <div class="txt col-4">
+                <img src="img/nav2.webp" alt="">
+                <p>Which morning fourth great won't is to fly bearing man. Called unto shall seed, deep, herb set seed land divide after over first creeping. First creature set upon stars deep male gathered said she'd an image spirit our</p>
+            </div>
+            <div class="number col-4">
+                <h4>Contact Us</h4>
+                <p><i class="fa-solid fa-location-dot"></i>1234 Some St San Francisco, CA 94102, US &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.800.123.4567</p>
+                <p><i class="fa-solid fa-phone"></i>(123) 456 78 90</p>
+                <p><i class="fa-regular fa-envelope"></i>support@axiomthemes.com</p>
+            </div>
+            <div class="date col-4">
+                <h4>Opening Hours</h4>
+                <p>Monday ...................... Closed</p>
+                <p>Tue-Fri .............. 10 am - 12 pm</p>
+                <p>Sat-Sun ............... 8 am - 11 pm</p>
+                <p>Holidays ............. 10 am - 12 pm</p>
+            </div>
+        </div>
+        <div class="row-4 row">
+            <div class="txt col-6">
+                <p>Copyright ©2024 All rights reserved | This template is made with &#9829; by <span> Colorlib</span></p>
+            </div>
+            <div class="font col-6">
+            <p>Follow Us <i class="fa-brands fa-facebook-f"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-google-plus-g"></i><i class="fa-brands fa-pinterest"></i><i class="fa-brands fa-instagram"></i></p>
+        </div>
+    </div>
+</body>
+</html>
